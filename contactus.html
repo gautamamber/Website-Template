@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WebsiteTemplate.com</title>
+	 <meta charset="utf-8">
+
+	 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amaranth"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+
+/*
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+*/
+
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    margin-right: 20px; 
+    background-color: #005A0B;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 150px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    font-size: 25px;
+    
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    font-size: 25px;
+    
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+
+.fa-linkedin {
+  font-size: 25px;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-instagram {
+  font-size: 25px;
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    
+}
+.fa-instagram:hover {
+    background-color: #E75400;
+}
+
+
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+
+
+
+#contact {
+  background: #F9F9F9;
+  padding: 15px;
+ 
+ 
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+
+.back{
+   background-image: url("static/ockybg.png");
+}
+
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  color: white;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+.icon {
+  position: fixed;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon a {
+  display: block;
+  text-align: center;
+ padding-top: 5px;
+ width: 30%;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+
+
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+
+.footer-link:hover{
+  color: white;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+.social{font-size:30px; color: white;
+	margin-top: 18px;
+	padding-left: 6px;
+padding-right: 6px;}
+
+	.all_test{
+			font-family: Amaranth;
+	}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   
+   
+   color: white;
+   text-align: center;
+}
+
+
+ textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+
+
+
+</style>
+
+<body class="back">
+
+<!-- Navbar -->
+
+<nav class="navbar-fixed-top navbar-inverse" style="background-color: #F5A600;">
+  <div class="container-fluid">
+    <div class="navbar-header" style="margin-bottom: 15px;">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right all_test"  style="font-size: 17px; margin-top: 8px; margin-bottom: 11px; color: white;">
+      
+        <li><a href="index.html" style="color: black; font-size: 20px;"><b>HOME</b></a></li>
+        
+       <!--  <li><a href="index.html">TESTIMONIAL</a></li> -->
+        <li><a href="https://blog.WebsiteTemplate.com/" style="color: black; font-size: 20px;"><b>BLOG</b></a></li>
+        <li><a href="news.html" style="color: black; font-size: 20px;"><b>NEWS</b></a></li>
+        <li><a href="#" style="color: white; margin-right: 20px; font-size: 20px;"><b>CONTACT US</b></a></li>
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid" style="background: #252F41;">
+  <div class="row">
+    <div class="col-xs-12" style="margin-top:  75px; margin-bottom: 50px; font-size: 100px; color: white; ">
+      <center>Connect with Us</center>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+    <br><br>
+      <center>
+      <h1><b>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."</b></h1></center><br>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 30px;">
+  <div class="row">
+    <div class="col-md-6"> 
+      
+  <form id="contact" action="" method="post">
+    
+    <fieldset>
+      <input style="font-size: 15px;"  placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input style="font-size: 15px;" placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input style="font-size: 15px;" placeholder="Your Phone Number (optional)" type="tel" tabindex="3" >
+    </fieldset>
+   
+    <fieldset>
+       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required=""></textarea>
+    </fieldset>
+    <fieldset>
+      <center><button class="button button1" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button></center>
+    </fieldset>
+    
+  </form>
+
+ </div>
+<div class="col-md-6">
+  <center>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14028.920000705197!2d77.03634773192961!3d28.472619269696683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19b2668b71e3%3A0xe4ba6a0849b01c0a!2sSector+14%2C+Gurugram%2C+Haryana+122022!5e0!3m2!1sen!2sin!4v1551889869950" style="width: 100%; height: 420px; border: white; padding: 5px; background-color: white;"></iframe>
+ </center>
+
+
+
+  
+
+
+<div class="container-fluid" style="background: #E22664; margin-top: 5px; color: white;">
+  <div class="row">
+    <div class="col-xs-12" >
+      <p><h4>Feel free to contact us</h4></p>
+      <h3>hello@websitetemplate.com</h3>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+<br>
+
+   
+  </div>
+</div>
+
+
+<div class="container-fluid" id = "contactus" style="background: #F5A600; margin-top: 50px; color: black;">
+  <div class="row">
+    <div class="col-md-6 col-xs-12" style="margin-top: 20px;">
+    <center><b style="font-size: 20px;" >Quick Links</b><br>
+    <b><a class = "footer-link" href="home.html">Home</a></b><br>
+      <b><a class = "footer-link" href="contactus.html">Contact us</a></b><br>
+      <b><a class = "footer-link" href="https:blog.WebsiteTemplate.com">Blog</a></b><br>
+      <b><a class = "footer-link" href="#">News</a></b><br>
+      
+      <b><a class = "footer-link" href="#mission">Vision/Mission</a></b><br>
+     </center>
+    </div>
+
+    <div class="col-md-6 col-xs-12" style="margin-top: 20px; ">
+    <center><b style="font-size: 20px;">My planet’s address:</b><br><br>
+     
+     <b>Plot no ABC, Stree no ABC</b><br>
+      <b>Gurugram, Haryana 122002, India</b><br>
+      <b>+91 XXXXXXXXXXX</b><br>
+      <b>Send your love and queries to:</b><br>
+      <b>hello@WebsiteTemplate.com</b><br></center>
+
+      <!-- <p><center class = "hover"><a href="https://www.facebook.com/amber.gautam.5"  data-toogle= "tooltip" data-placement = "bottom" title="Facebook" class="social_icons social"><i class="fa fa-facebook" ></i></a>
+        <a href="https://twitter.com/gautam_amber" data-toogle= "tooltip" data-placement = "bottom" title="Twitter" class="social_icons social social"><i class="fa fa-twitter" ></i></a>
+
+
+<a href="#" data-toogle= "tooltip" data-placement = "bottom" title="Instagram" class="social_icons social"><i class="fa fa-instagram"></i></a>
+
+      </center></p> -->
+    </div>
+    
+  </div>
+
+  <hr>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <center><ul class="social-icons">
+         <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li> 
+        <li><a href="#" class="social-icon"> <i class="fa fa-instagram"></i></a></li>  
+        <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li> 
+        
+    </ul></center>
+
+        
+        
+<hr style="margin-right: 400px; margin-left: 400px;">
+
+      </center>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="margin-bottom: 20px;">
+    <div class="row">
+      <div class="col-xs-12">
+        <center>© 2018 all rights reserved ABC pvt ltd  <a href="#"><u>Privacy Policy</u></a>  <a href="#"><u> Refund Policy</u></a></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="footer">
+  <img src="static/googleplay.png" style="height: 60px"><img src="static/appleplay.png" style="height: 60px"	>
+</div> -->
+
+
+
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+
+<script>
+  function callme(field) {
+
+    window.prompt("Copy to clipboard: Ctrl+C", field);
+}
+
+
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+
+</script>
+
+
+
+
+</body>
+
+
+</html>
